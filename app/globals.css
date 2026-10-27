@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+    /* Creates the utility class: font-display */
+    --font-display: var(--font-system), sans-serif;
+
+    /* Overwrite the default sans stack entirely */
+    --font-sans: var(--font-system), ui-sans-serif, system-ui, sans-serif;
+
+    --color-nux-100: #fbe9ea;
+    --color-nux-200: #f4bbbd;
+    --color-nux-300: #ec8d90;
+    --color-nux-400: #e55f63;
+    --color-nux-500: #e02e34; /* ← brand primary */
+    --color-nux-600: #cb2127; /* closest step to B82328 */
+    --color-nux-700: #b82328; /* exact step to B82328 */
+    --color-nux-800: #ae1c21;
+    --color-nux-900: #90171c;
+
+    --animate-eq: eq 0.9s ease-in-out infinite;
+    @keyframes eq {
+        0%,
+        100% {
+            transform: scaleY(0.25);
+        }
+        50% {
+            transform: scaleY(1);
+        }
+    }
+    --animate-slide: slide 2s ease-in-out infinite;
+    @keyframes slide {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(400%);
+        }
+    }
+}
+
+@utility no-scrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
