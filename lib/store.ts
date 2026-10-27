@@ -5,7 +5,7 @@
 export const store = {
   get<T>(k: string, d: T): T {
     try {
-      const v = localStorage.getItem("nuxradio:" + k);
+      const v = localStorage.getItem("nxsr:" + k);
       return v === null ? d : (JSON.parse(v) as T);
     } catch {
       return d;
@@ -13,7 +13,7 @@ export const store = {
   },
   set(k: string, v: unknown): void {
     try {
-      localStorage.setItem("nuxradio:" + k, JSON.stringify(v));
+      localStorage.setItem("nxsr:" + k, JSON.stringify(v));
     } catch {
       /* storage unavailable (private mode, quota, …) */
     }

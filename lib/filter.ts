@@ -22,8 +22,6 @@ export function filterStations(
     out = out.filter((s) => /top 40|hits/i.test(s.genre));
   if (filter === "OPM") out = out.filter((s) => /opm/i.test(s.genre));
   if (filter === "Manila") out = out.filter((s) => /manila/i.test(s.region));
-  if (filter === "Visayas")
-    out = out.filter((s) => /visayas|negros/i.test(s.region));
 
   return out;
 }

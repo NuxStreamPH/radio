@@ -48,8 +48,8 @@ export const STATIONS: Station[] = [
     short: "KOOL FM",
     owner: "SMILE Media Group",
     description: [
-      `AllHitz24 is an independent commercial internet radio station streaming from Dumaguete, Negros Oriental, Philippines, and available worldwide through Zeno.FM, TuneIn, and NuxStream Radio!`,
-      `Branded as the internet’s “#HitsForAll,” AllHitz24 delivers nonstop music entertainment 24 hours a day, 7 days a week, giving listeners an easy way to enjoy fresh hits, familiar favorites, and feel-good radio wherever they are.`,
+      `koolFM is an internet radio station streaming hailing from Pasig City, Metro Manila, Philippines, and available worldwide through TuneIn, Online Radio Box, and NuxStream Radio!`,
+      `koolFM delivers non-stop music, news, information, and entertainment 24 hours a day, 7 days a week, giving listeners an easy way to enjoy their favorite songs, be informed at any time, and anywhere!`,
     ].join("\n"),
     djs: [],
   },
